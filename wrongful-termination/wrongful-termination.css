@@ -1,0 +1,12 @@
+.welcome-area {
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.3)), url(../assets/images/wrongful-termination-banner.webp);
+    background-position: 30%;
+}
+
+@media (max-width: 991px) {
+    .welcome-area {
+        background-attachment: unset;
+        background-position: 50%;
+    }
+}

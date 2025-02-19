@@ -1,0 +1,1 @@
+!function(s){"use strict";s(".svg").each((function(){const n=s(this),t=n.data("svg");var a,i;a=t,i=n,s.get(`../assets/js/svg/${a}.svg`,(function(n){var t=s(n).find("svg");i.append(t)}),"xml")}))}(window.jQuery);

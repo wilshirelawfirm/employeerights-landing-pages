@@ -1,0 +1,2 @@
+(function($){"use strict";const observer=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{if(entry.isIntersecting){entry.target.classList.add("animate");return}
+entry.target.classList.remove("animate")})});const items=document.querySelectorAll(".animated");items.forEach((element)=>observer.observe(element))})(window.jQuery)
