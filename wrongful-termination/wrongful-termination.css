@@ -1,6 +1,6 @@
 .welcome-area {
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.3)), url(../assets/images/wrongful-termination-banner.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../assets/images/wrongful-termination-banner.webp);
     background-position: 30%;
 }
 
