@@ -10,3 +10,24 @@
         background-position: 67%;
     }
 }
+
+.accordion .accordion-content ul {
+    padding-bottom: 0;
+    list-style: none;
+}
+
+.accordion .accordion-content ul li {
+    font-weight: 400;
+    font-size: 16px;
+    color: #424242;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.accordion .accordion-content ul li:before {
+    content: '✓';
+    position: absolute;
+    left: -17px;
+    color: rgb(242, 103, 36);
+}
