@@ -51,7 +51,7 @@ a.telephone::before {
 .text-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .text-content h5 {
@@ -108,7 +108,8 @@ a.telephone::before {
 
 
 .announcement .row {
-    background-color: rgb(242, 103, 36);
+    /* background-color: rgb(242, 103, 36); */
+    background-color: #0f1c41;
     min-height: 80px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -203,6 +204,7 @@ a.telephone::before {
     .badge-card {
         flex-direction: column;
         width: auto;
+        min-width: 260px;
         height: auto;
         padding: 15px;
     }
