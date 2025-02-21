@@ -113,6 +113,7 @@ a.telephone::before {
     min-height: 80px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-top: -3.5%;
 }
 
 .announcement .row h3 {
@@ -221,5 +222,15 @@ a.telephone::before {
 
     .badge-card p {
         text-align: center;
+    }
+}
+
+.section-title.large {
+    font-size: 30px !important;
+}
+
+@media (max-width:991px) {
+    .section-title.large {
+        font-size: 24px !important;
     }
 }
