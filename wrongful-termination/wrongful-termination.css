@@ -1,6 +1,19 @@
+a.telephone {
+    position: relative;
+}
+
+a.telephone::before {
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' id='phone_number' data-name='phone number' xmlns='http://www.w3.org/2000/svg' fill='%230f1c41'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Crect id='Rectangle_5' data-name='Rectangle 5' width='24' height='24' fill='none'%3E%3C/rect%3E%3Cpath id='Shape' d='M7.02,15.976,5.746,13.381a.7.7,0,0,0-.579-.407l-1.032-.056a.662.662,0,0,1-.579-.437,9.327,9.327,0,0,1,0-6.5.662.662,0,0,1,.579-.437l1.032-.109a.7.7,0,0,0,.589-.394L7.03,2.446l.331-.662a.708.708,0,0,0,.07-.308.692.692,0,0,0-.179-.467A3,3,0,0,0,4.693.017l-.235.03L4.336.063A1.556,1.556,0,0,0,4.17.089l-.162.04C1.857.679.165,4.207,0,8.585V9.83c.165,4.372,1.857,7.9,4,8.483l.162.04a1.556,1.556,0,0,0,.165.026l.122.017.235.03a3,3,0,0,0,2.558-.993.692.692,0,0,0,.179-.467.708.708,0,0,0-.07-.308Z' transform='translate(4.393 6.587) rotate(-30)' fill='none' stroke='%23000000' stroke-miterlimit='10' stroke-width='1.5'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    width: 12%;
+    height: 12%;
+    position: absolute;
+    left: 13%;
+    top: 5px;
+}
+
 .welcome-area {
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../assets/images/wrongful-termination-banner.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../assets/images/wrongful-termination-banner.webp);
     background-position: 30%;
 }
 
@@ -8,6 +21,7 @@
     .welcome-area {
         background-attachment: unset;
         background-position: 67%;
+        height: 30vh !important;
     }
 }
 
@@ -40,7 +54,7 @@
     align-items: flex-start;
 }
 
-.text-content h5{
+.text-content h5 {
     font-weight: 700;
     font-size: 23px;
     text-align: center !important;
@@ -53,25 +67,25 @@
 }
 
 
-.text-content  ul {
+.text-content ul {
     padding-bottom: 0;
     padding-left: 40px;
     list-style: none;
     width: auto;
-    display:inline-block;
+    display: inline-block;
 }
 
-.text-content  ul li {
+.text-content ul li {
     font-weight: 700;
     font-size: 15px;
     color: #000;
     letter-spacing: 1px;
     margin-bottom: 8px;
     position: relative;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
-.text-content  ul li:before {
+.text-content ul li:before {
     content: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201266.21%201097.8%22%3E%3Cdefs%3E%3Cstyle%3E%20%20%20%20%20%20.cls-1%20%7B%20%20%20%20%20%20%20%20fill%3A%20%23f16926%3B%20%20%20%20%20%20%20%20fill-rule%3A%20evenodd%3B%20%20%20%20%20%20%7D%20%20%20%20%20%20.cls-2%20%7B%20%20%20%20%20%20%20%20fill%3A%20%233e4967%3B%20%20%20%20%20%20%7D%20%20%20%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M525.68%2C584.07S767.91%2C83.58%2C1266.21%2C0c-289.84%2C139.88-458.26%2C313-664.06%2C786.11%2C0%2C0-22.19%2C54.45-62.9%2C66.84%2C0%2C0-45.04%2C14.15-79.35%2C21.2-11.06-74.59-111.26-355.69-267.32-419.75%2C39.22-49.55%2C244.35-100.24%2C333.1%2C129.66%22%2F%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M98.59%2C95.62h787.06c-42.44%2C28.47-82.96%2C60.11-121.48%2C94.41H123.02c-7.84%2C0-14.98%2C3.23-20.18%2C8.43-5.2%2C5.2-8.43%2C12.35-8.43%2C20.18v756.14c0%2C7.83%2C3.23%2C14.98%2C8.43%2C20.18%2C5.2%2C5.2%2C12.35%2C8.43%2C20.18%2C8.43h756.14c7.83%2C0%2C14.98-3.23%2C20.18-8.43%2C5.2-5.2%2C8.43-12.34%2C8.43-20.18V349.8c29.19-37.32%2C60.54-72.77%2C94.41-105.77v755.18c0%2C27.15-11.08%2C51.8-28.93%2C69.66-17.85%2C17.85-42.51%2C28.93-69.66%2C28.93H98.59c-27.15%2C0-51.8-11.08-69.66-28.93-17.85-17.85-28.94-42.51-28.94-69.66V194.21c0-27.15%2C11.08-51.8%2C28.94-69.65%2C17.85-17.85%2C42.51-28.93%2C69.66-28.93%22%2F%3E%3C%2Fsvg%3E');
     position: absolute;
     width: 20px;
@@ -88,5 +102,120 @@
     }
 }
 
+.badges {
+    z-index: 2;
+}
 
 
+.announcement .row {
+    background-color: rgb(242, 103, 36);
+    min-height: 80px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.announcement .row h3 {
+    color: #FFF;
+    margin: 0;
+    font-weight: 300;
+}
+
+.announcement .row h3 strong {
+    font-weight: 700;
+}
+
+.specific-badges {
+    overflow: hidden;
+}
+
+.row.badge-card-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+.row.badge-card-slider > div {
+    scroll-snap-align: center;
+}
+
+.badge-card {
+    position: relative;
+    border-radius: 6px;
+    background-color: #FFF;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    width: 440px;
+    height: 158px;
+    padding: 10px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.badge-card .content {
+    margin-left: 20px;
+}
+
+.badge-card h4 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+}
+
+.badge-card p {
+    font-size: 16px;
+    line-height: 1em;
+    letter-spacing: 0px;
+}
+.badge-card p strong {
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.badge-card img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    transform: scale(2) translateX(-20px) translateY(2px);
+}
+
+@media (max-width:991px) {
+    .badge-card {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .row.badge-card-slider { 
+        padding-top: 80px;
+    }
+
+    .badge-card .content {
+        margin-left: 0;
+    }
+
+    .badge-card {
+        width: 300px;
+        height: auto;
+    }
+
+    .badge-card img {
+        transform: scale(2.3) translateY(-20px) translateX(0);
+        margin: 20px auto;
+    }
+
+    .badge-card h4 {
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .badge-card p {
+        text-align: center;
+    }
+}
