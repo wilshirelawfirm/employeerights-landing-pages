@@ -108,7 +108,6 @@ a.telephone::before {
 
 
 .announcement .row {
-    /* background-color: rgb(242, 103, 36); */
     background-color: #0f1c41;
     min-height: 80px;
     border-radius: 5px;
@@ -126,6 +125,9 @@ a.telephone::before {
     font-weight: 700;
 }
 @media (max-width:991px) {
+    .announcement .row {
+        margin-top: -2%;
+    }
     .announcement .row h3 {
         font-size: 24px;
     }
