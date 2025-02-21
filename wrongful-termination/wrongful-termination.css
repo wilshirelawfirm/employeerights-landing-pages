@@ -11,6 +11,10 @@ a.telephone::before {
     top: 5px;
 }
 
+p.subheader {
+    font-size: 19px !important;
+}
+
 .welcome-area {
     background-attachment: fixed;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../assets/images/wrongful-termination-banner.webp);
@@ -148,6 +152,7 @@ a.telephone::before {
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
 }
+
 .row.badge-card-slider > div {
     scroll-snap-align: center;
 }
@@ -157,7 +162,7 @@ a.telephone::before {
     border-radius: 6px;
     background-color: #FFF;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    width: 440px;
+    max-width: 440px;
     height: 158px;
     padding: 10px;
     padding-right: 15px;
@@ -195,7 +200,17 @@ a.telephone::before {
     transform: scale(2) translateX(-20px) translateY(2px);
 }
 
+@media (max-width:1400px) {
+    .row.badge-card-slider > div {
+        margin-right: 80px
+    }
+} 
+
 @media (max-width:991px) {
+    .row.badge-card-slider > div {
+        margin-right: auto;
+    }
+
     .row.badge-card-slider { 
         padding-top: 80px;
     }
@@ -236,3 +251,4 @@ a.telephone::before {
         font-size: 24px !important;
     }
 }
+
