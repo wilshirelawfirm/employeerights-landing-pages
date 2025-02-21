@@ -187,11 +187,6 @@ a.telephone::before {
 }
 
 @media (max-width:991px) {
-    .badge-card {
-        flex-direction: column;
-        padding: 10px;
-    }
-
     .row.badge-card-slider { 
         padding-top: 80px;
     }
@@ -201,8 +196,10 @@ a.telephone::before {
     }
 
     .badge-card {
+        flex-direction: column;
         width: auto;
         height: auto;
+        padding: 15px;
     }
 
     .badge-card img {
