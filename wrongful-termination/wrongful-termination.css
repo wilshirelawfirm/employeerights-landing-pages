@@ -123,6 +123,11 @@ a.telephone::before {
 .announcement .row h3 strong {
     font-weight: 700;
 }
+@media (max-width:991px) {
+    .announcement .row h3 {
+        font-size: 24px;
+    }
+}
 
 .specific-badges {
     overflow: hidden;
