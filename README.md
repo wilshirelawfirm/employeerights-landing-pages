@@ -1,5 +1,5 @@
 # Employee rights Landing pages
-- This repository is only for landing pages related for Personal Injury (car accidents, slip and fall, etc.) 
+- This repository is only for landing pages related for Employment
 - employeerights.wilshirelaw.com
 
 ### Get Started
