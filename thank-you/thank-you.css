@@ -22,6 +22,7 @@ a {
 a span.text {
     border-bottom: 1px solid;
     transition: all 0.2s ease-in-out;
+    font-weight: 600;
 }
 
 a:hover span.text {
