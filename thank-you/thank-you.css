@@ -7,6 +7,22 @@
     font-size: 23px;
 }
 
+@media (max-width: 991px) {
+    .welcome-area {
+        height: 80vh !important;
+        background-position: center;
+        max-height: unset;
+    }
+
+    .welcome-area h1 {
+        font-size: 35px !important;
+    }
+
+    .welcome-area h3 {
+        font-size: 18px;
+    }
+}
+
 .stars {
     background-image: url("../assets/images/star.png");
     background-size: 20%;
