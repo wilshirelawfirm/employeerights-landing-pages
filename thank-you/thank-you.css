@@ -1,5 +1,8 @@
-.welcome-area h1 {
+.welcome-area {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), url(../assets/images/los-angeles.webp);
+}
+
+.welcome-area h1 {
     font-size: 65px !important;
 }
 
