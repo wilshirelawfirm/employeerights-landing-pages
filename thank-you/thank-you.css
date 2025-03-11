@@ -1,0 +1,29 @@
+.welcome-area h1 {
+    font-size: 65px !important;
+}
+
+.welcome-area h3 {
+    color: #FFFFFF;
+    font-size: 23px;
+}
+
+.stars {
+    background-image: url("../assets/images/star.png");
+    background-size: 20%;
+    height: 46px;
+    width: 250px;
+    display: block
+}
+
+a {
+    color: #FFFF;
+}
+
+a span.text {
+    border-bottom: 1px solid;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover span.text {
+    color: rgb(242, 103, 36);
+}

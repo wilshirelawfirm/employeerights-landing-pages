@@ -38,7 +38,7 @@
             eventName: "form_completion",
             tags: { revenue: 0, value: 0 },
           });
-          window.location.href = "https://wrongfulterminationlawyersca.com/thank-you-lp/";
+          window.location.href = "/thank-you";
         })
         .catch((e) => {});
     });
