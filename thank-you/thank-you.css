@@ -3,27 +3,27 @@
 }
 
 .welcome-area h1 {
-    font-size: 65px !important;
+    font-size: 40px !important;
 }
 
 .welcome-area h3 {
     color: #FFFFFF;
-    font-size: 23px;
+    font-size: 18px !important;
+}
+
+.welcome-area p {
+    font-size: 17px !important;
 }
 
 @media (max-width: 991px) {
     .welcome-area {
-        height: 80vh !important;
+        min-height: 80vh !important;
         background-position: center;
         max-height: unset;
     }
 
     .welcome-area h1 {
         font-size: 35px !important;
-    }
-
-    .welcome-area h3 {
-        font-size: 18px;
     }
 }
 
@@ -47,4 +47,26 @@ a span.text {
 
 a:hover span.text {
     color: rgb(242, 103, 36);
+}
+
+.recent-badges {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recent-badges img {
+    max-width: 150px;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    .recent-badges {
+        justify-content: center;
+    }
+
+    .recent-badges img {
+        margin: 10px;
+    }
 }
