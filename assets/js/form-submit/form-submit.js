@@ -15,7 +15,7 @@
       const a = window?.location?.href,
         data = new FormData(form),
         params = new URLSearchParams(new URL(a).search);
-      var payload = { websource: "New MVA Landing page", URL: a };
+      var payload = { websource: "New Wrongful Termination Landing page", URL: a };
 
       params.forEach((value, name) => {
         payload[name] = value;
