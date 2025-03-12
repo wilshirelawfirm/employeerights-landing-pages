@@ -46,6 +46,9 @@
       type: "event",
       eventName: "form_completion",
       tags: { revenue: 0, value: 0 },
+      properties: {
+        URL: window.location.href
+      }
     });
   }
 
