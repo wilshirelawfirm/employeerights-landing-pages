@@ -8,6 +8,8 @@
     .welcome-area {
         background-attachment: unset;
         background-position: 67%;
-        height: 30vh !important;
+        height: auto;
+        min-height: 50vh;
+        padding: 20px 0;
     }
 }
