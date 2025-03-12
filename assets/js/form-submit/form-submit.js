@@ -29,12 +29,28 @@
         method: "POST",
         body: JSON.stringify(payload),
       })
-        .then((e) => e.text())
+        .then((e) => {
+          e.text();
+        })
         .then((o) => {
           form.reset();
-          window.location.href = "/thank-you";
+          formSubmitted();
         })
         .catch((e) => {});
     });
   });
+
+  async function runOptimizely() {
+    window.optimizely = window.optimizely || [];
+    window.optimizely?.push({
+      type: "event",
+      eventName: "form_completion",
+      tags: { revenue: 0, value: 0 },
+    });
+  }
+
+  async function formSubmitted() {
+    await runOptimizely();
+    window.location.href = "/thank-you";
+  }
 })(window.jQuery);
