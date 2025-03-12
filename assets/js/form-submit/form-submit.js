@@ -32,12 +32,6 @@
         .then((e) => e.text())
         .then((o) => {
           form.reset();
-          window.optimizely = window.optimizely || [];
-          window.optimizely?.push({
-            type: "event",
-            eventName: "form_completion",
-            tags: { revenue: 0, value: 0 },
-          });
           window.location.href = "/thank-you";
         })
         .catch((e) => {});

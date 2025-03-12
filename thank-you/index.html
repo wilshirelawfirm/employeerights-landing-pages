@@ -13,6 +13,7 @@
       rel="stylesheet" />
 
     <title>Thank you - from Wilshire Law Firm</title>
+    <script src="https://cdn.optimizely.com/js/5892367849357312.js"></script>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
@@ -126,5 +127,12 @@
     <!-- Bootstrap -->
     <script src="../assets/js/popper.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script>
+      window?.optimizely?.push({
+        type: "event",
+        eventName: "form_completion",
+        tags: { revenue: 0, value: 0 },
+      });
+    </script>
   </body>
 </html>
