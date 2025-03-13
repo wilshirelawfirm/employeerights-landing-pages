@@ -116,7 +116,7 @@
             </a>
             <ul class="nav">
               <li style="text-align: left; display: flex; flex-direction: column">
-                <a href="tel:712-538-4030" target="_blank" class="telephone">712-538-4030</a>
+                <a id="header-phone" href="tel:712-538-4030" target="_blank" class="telephone">712-538-4030</a>
                 <span class="display: block">AVAILABLE 24/7 • HABLAMOS ESPAÑOL</span>
               </li>
             </ul>
@@ -1082,15 +1082,7 @@
     <script src="../assets/js/class-animation.js"></script>
     <script defer src="../assets/js/form-submit/form-submit-min.js"></script>
     <script defer src="../assets/owlcarousel/owl.carousel.min.js"></script>
-    <script>
-      // only for AB Testing
-      document.addEventListener("click", function (e) {
-        const target = e.target.closest("#icw");
-        if (target) {
-          window.parent.postMessage("intaker_clicked", "*");
-        }
-      });
-    </script>
+    <script src="../assets/js/main.js"></script>
 
     <!-- Third Party Scripts -->
     <script defer>
