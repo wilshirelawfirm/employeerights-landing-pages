@@ -137,5 +137,12 @@
         },
       });
     </script>
+    <script>
+      function submitForm() {
+        window.parent.postMessage("submitted form", "*");
+      }
+
+      submitForm();
+    </script>
   </body>
 </html>
