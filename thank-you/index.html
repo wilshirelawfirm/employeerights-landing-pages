@@ -128,11 +128,7 @@
     <script src="../assets/js/popper.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script>
-      function submitForm() {
-        window.parent.postMessage("form_completion", "*");
-      }
-
-      submitForm();
+      window.parent.postMessage("form_completion", "*");
     </script>
   </body>
 </html>
