@@ -1,5 +1,5 @@
 $(function () {
-    $("#icw--launcher").on("click", function () {
+    $("#icw").on("click", function () {
         console.log("icw clicked");
     });
 });
