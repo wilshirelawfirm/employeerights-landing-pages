@@ -40,20 +40,19 @@
     });
   });
 
-  async function runOptimizely() {
-    window.optimizely = window.optimizely || [];
-    window.optimizely?.push({
-      type: "event",
-      eventName: "form_completion",
-      tags: { revenue: 0, value: 0 },
-      properties: {
-        URL: window.location.href
-      }
-    });
-  }
+  // async function runOptimizely() {
+  //   window.optimizely = window.optimizely || [];
+  //   window.optimizely?.push({
+  //     type: "event",
+  //     eventName: "form_completion",
+  //     tags: { revenue: 0, value: 0 },
+  //     properties: {
+  //       URL: window.location.href
+  //     }
+  //   });
+  // }
 
-  async function formSubmitted() {
-    await runOptimizely();
+  function formSubmitted() {
     window.location.href = "/thank-you";
   }
 })(window.jQuery);
