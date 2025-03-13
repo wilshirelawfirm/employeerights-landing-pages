@@ -1083,10 +1083,11 @@
     <script defer src="../assets/js/form-submit/form-submit-min.js"></script>
     <script defer src="../assets/owlcarousel/owl.carousel.min.js"></script>
     <script>
+      // only for AB Testing
       document.addEventListener("click", function (e) {
         const target = e.target.closest("#icw");
         if (target) {
-          console.log(target)
+          window.parent.postMessage("intaker_clicked", "*");
         }
       });
     </script>
