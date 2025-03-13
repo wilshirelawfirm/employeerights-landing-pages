@@ -40,19 +40,28 @@
     });
   });
 
-  // async function runOptimizely() {
-  //   window.optimizely = window.optimizely || [];
-  //   window.optimizely?.push({
-  //     type: "event",
-  //     eventName: "form_completion",
-  //     tags: { revenue: 0, value: 0 },
-  //     properties: {
-  //       URL: window.location.href
-  //     }
-  //   });
-  // }
-
   function formSubmitted() {
     window.location.href = "/thank-you";
   }
+
+  function sanitizeInput(input) {
+    let cleanInput = input.replace(/</g, "").replace(/>/g, "");
+    cleanInput = cleanInput.replace(/'/g, "").replace(/"/g, "");
+    return cleanInput;
+  }
+
+  const allInputs = document.querySelectorAll("input");
+  const allTextAreas = document.querySelectorAll("textarea");
+
+  allInputs.forEach((inputField) => {
+    inputField.addEventListener("input", function (e) {
+      e.target.value = sanitizeInput(e.target.value);
+    });
+  });
+
+  allTextAreas.forEach((textArea) => {
+    textArea.addEventListener("input", function (e) {
+      e.target.value = sanitizeInput(e.target.value);
+    });
+  });
 })(window.jQuery);
