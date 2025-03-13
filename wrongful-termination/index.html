@@ -1083,11 +1083,12 @@
     <script defer src="../assets/js/form-submit/form-submit-min.js"></script>
     <script defer src="../assets/owlcarousel/owl.carousel.min.js"></script>
     <script>
-      var element = document.getElementById("icw");
-      console.log(element);
-      element.onclick = function (event) {
-        console.log("Element clicked!", event);
-      };
+      document.addEventListener("click", function (e) {
+        const target = e.target.closest("#icw");
+        if (target) {
+          console.log(target)
+        }
+      });
     </script>
 
     <!-- Third Party Scripts -->
