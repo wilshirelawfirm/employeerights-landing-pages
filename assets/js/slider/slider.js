@@ -41,5 +41,9 @@ $(function () {
       slider[0].scrollBy(slides.first().outerWidth(), 0); // speed
     }, 4000); // duration
   }
-  restartTimeout(slides.length);
+
+  // run only on mobile devices
+  if (window.matchMedia("(max-width: 991px)").matches) {
+    restartTimeout(slides.length);
+  }
 });
