@@ -39,7 +39,7 @@ $(function () {
       }
       counter++;
       slider[0].scrollBy(slides.first().outerWidth(), 0); // speed
-    }, 2500); // duration
+    }, 4000); // duration
   }
   restartTimeout(slides.length);
 });
