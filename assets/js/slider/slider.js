@@ -38,7 +38,7 @@ $(function () {
         return;
       }
       counter++;
-      slider[0].scrollBy(counter * 100, 0); // speed
+      slider[0].scrollBy(slides.first().outerWidth(), 0); // speed
     }, 2500); // duration
   }
   restartTimeout(slides.length);
