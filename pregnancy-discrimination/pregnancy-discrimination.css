@@ -1,0 +1,14 @@
+.welcome-area {
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../assets/images/pregnancy-discrimination-banner.webp);
+    background-position: 20% 55%;
+    height: 65vh;
+}
+
+@media (max-width: 991px) {
+    .welcome-area {
+        background-attachment: unset;
+        background-position: 65%;
+        height: 500px;
+    }
+}
