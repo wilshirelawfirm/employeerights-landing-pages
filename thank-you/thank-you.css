@@ -17,10 +17,10 @@
 
 @media (max-width: 991px) {
     .welcome-area {
-        height: 100vh !important;
+        min-height: 100vh !important;
+        height: auto;
         background-position: center;
         max-height: unset;
-        padding-top: 100px;
     }
 
     .welcome-area h1 {
