@@ -21,6 +21,7 @@
         height: auto;
         background-position: center;
         max-height: unset;
+        padding-top: 100px;
     }
 
     .welcome-area h1 {
