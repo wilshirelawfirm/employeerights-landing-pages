@@ -17,7 +17,7 @@
 
 @media (max-width: 991px) {
     .welcome-area {
-        min-height: 80vh !important;
+        height: 750px;
         background-position: center;
         max-height: unset;
     }
