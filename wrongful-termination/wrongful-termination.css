@@ -9,7 +9,8 @@
     .welcome-area {
         background-attachment: unset;
         background-position: 67%;
-        height: 500px;
+        height: 450px;
+        padding-top: 50px;
     }
 }
 
