@@ -12,3 +12,20 @@
         height: 500px;
     }
 }
+
+
+/* AB Testing */
+
+/* START VARIANT 2 */
+body.variant-2 .welcome-area .ab-test-item-1 {
+    order: 2;
+}
+
+body.variant-2 .welcome-area .ab-test-item-2 {
+    order: 1;
+}
+
+body.variant-2 .welcome-area .ab-test-item-3 {
+    order: 0;
+}
+/* END VARIANT 2 */

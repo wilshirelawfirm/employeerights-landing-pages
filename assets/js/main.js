@@ -15,4 +15,9 @@ $(function () {
       window.parent.postMessage("phone_number_clicked", "*");
     }
   });
+
+  // add variant as body class
+  const urlParams = new URLSearchParams(window?.location?.search);
+  const variant = urlParams.get('variant');
+  document.body.classList.add(`variant-${variant}`);
 });
